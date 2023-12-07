@@ -9,6 +9,7 @@ export const createToken = ( _id) =>{
     return jwt.sign({_id}, jwtkey, {expiresIn:"3d"});
 }
  export const registerUser = async(req, res ) =>{
+    console.log("req body" + JSON.stringify(req.body));
     try{
         const { name, email , password } = req.body;
         
