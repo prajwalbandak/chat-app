@@ -4,7 +4,7 @@ const Chat = () => {
   return (
     <div>
         <h1 >
-     CHAT
+     CHAT PAGE BROOOO
     </h1>
     </div>
     
