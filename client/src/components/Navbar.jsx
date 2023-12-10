@@ -43,8 +43,8 @@ const Navbar = () => {
     <div className='flex justify-between items-center '>
 
    {user  && (
-       <Link to='/register'>
-       <button onClick= {(e) => logOutUser }className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-5' >
+       <Link to='/login'>
+       <button onClick= {(e) => logOutUser() }className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-5' >
            LogOut
                </button>
        </Link>
