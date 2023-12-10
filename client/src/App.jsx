@@ -6,12 +6,14 @@ import Login from './pages/Login';
 import './index.css'
 import Navbar from './components/Navbar';
 import { AuthContext } from './context/AuthContext';
+import { ChatContextProvider } from './context/ChatContext';
 
 function App() {
 const { user} = useContext(AuthContext);
 console.log("user Details in the user" + JSON.stringify(user));
   return (
     <>
+    <ChatContextProvider  user={user}>
 
       <Navbar />
       <Routes>
@@ -23,7 +25,7 @@ console.log("user Details in the user" + JSON.stringify(user));
     
     
   
-     
+      </ChatContextProvider>
     </>
   )
 }
